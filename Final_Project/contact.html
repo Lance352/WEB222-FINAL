@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../Final_Project/css/profile.css">
+    <link rel="stylesheet" href="../Final_Project/css/contact.css">
+    <script src="../Final_Project/js/contact.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Local Real Estate Agent</h1>
+        <nav>
+            <ul>
+                <li><a href="../Final_Project/index.html">Home</a></li>
+                <li><a href="../Final_Project/property.html">Property Listings</a></li>
+                <li><a href="../Final_Project/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Property Preference Form</h2>
+    <div class="center-container">
+        <form name="propertyForm" action="/submit" method="post" class="registration-form">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="propertyType">Type Property:</label>
+                <select name="propertyType" id="propertyType">
+                    <option value="House">House</option>
+                    <option value="Condo">Condominium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" name="bedrooms" id="bedrooms" min="1">
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" name="bathrooms" id="bathrooms" min="1">
+            </div>
+            <div class="form-group">
+                <label for="priceRange">Price Range:</label>
+                <input type="text" name="priceRange" id="priceRange">
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea name="comments" id="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group form-buttons">
+                <button type="button" onclick="validateForm()">Register Now</button>
+                <button type="button" onclick="clearForm()">Clear Form</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; Lance Curio</p>
+        <a href="../Final_Project/site.html">
+            <p>Site Map and Credits Page</p>
+        </a>
+    </footer>
+</body>
+</html>

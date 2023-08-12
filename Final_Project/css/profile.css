@@ -1,0 +1,77 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  justify-content: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.agent-details {
+  margin-left: 20px;
+}
+
+.agent-details h2 {
+  font-size: 1.5rem;
+}
+
+.property-showcase {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.property-showcase h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 960px;
+  height: 360px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}

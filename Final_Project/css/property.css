@@ -1,0 +1,40 @@
+.property-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.property-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.property-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.property-details {
+    flex: 2;
+}
+
+.property-details ul {
+    justify-content: space-evenly;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Property-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.property-image:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s  ease;
+}
